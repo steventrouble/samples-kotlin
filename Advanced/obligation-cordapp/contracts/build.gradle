@@ -12,11 +12,11 @@ cordapp {
 }
 
 dependencies {
-    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
 
     // Corda dependencies.
     cordaCompile "$corda_core_release_group:corda-core:$corda_core_release_version"
-    testCompile "$corda_release_group:corda-node-driver:$corda_release_version"
+    testImplementation "$corda_release_group:corda-node-driver:$corda_release_version"
 
     cordaCompile "$corda_core_release_group:corda-finance-contracts:$corda_release_version"
     cordaCompile "$corda_core_release_group:corda-finance-workflows:$corda_release_version"
